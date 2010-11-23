@@ -7,8 +7,12 @@ As sfSimpleAuth is a alpha release. Please report bugs !
 ## What is it ?
 
 sfSimpleAuth is a symfony 1.4 plugin that permit a single account authentification from an app.yml file.
+sfSimpleAuth comes with several default configuration in sfSimpleAuthPlugin/config/
 
-For a multi accounts and/or group permission managment, see sfGuardPlugin.
+Default configuration could be overided in your project config/ folder.
+see http://www.symfony-project.org/reference/1_4/en/ for more details.
+
+For severals accounts and/or group permission managment, see sfGuardPlugin.
 
 ## How to install ?
 
@@ -18,7 +22,9 @@ symfony plugin:install /absolute/path/sfSimpleAuthPlugin-0.1.1.tar.gz
 
 ## How to run ?
 
-Check if plugin is correctly enabled in config/ProjectConfiguration.class.php
+Check if plugin is correctly enabled in your project config/ProjectConfiguration.class.php
+
+sfSimpleAuth comes with his default config/settings.yml.
 
 edit /apps/_your\_app_/config/setting.yml :
 
