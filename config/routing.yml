@@ -1,0 +1,7 @@
+sf_simple_auth_signin:
+  url:    /identification
+  param:  { module: sfSimpleAuth, action: signin }
+
+sf_simple_auth_signout:
+  url:    /deconnexion
+  param:  { module: sfSimpleAuth, action: signout }
