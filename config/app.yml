@@ -1,3 +1,6 @@
+# This is defaut username and passowrd.
+# Use your own in your apps/appName/config/app.yml for prod.
+
 dev:
   sf_simple_auth:
     username:                 username

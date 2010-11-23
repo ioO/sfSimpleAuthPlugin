@@ -1,7 +1,9 @@
+# default routing.
+
 sf_simple_auth_signin:
-  url:    /identification
+  url:    /signin
   param:  { module: sfSimpleAuth, action: signin }
 
 sf_simple_auth_signout:
-  url:    /deconnexion
+  url:    /signout
   param:  { module: sfSimpleAuth, action: signout }
