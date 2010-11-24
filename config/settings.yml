@@ -1,0 +1,10 @@
+# default plugin settings
+# Add your own or override default in your project config/settings.yml
+
+default:
+  .actions:
+    login_module:           sfSimpleAuth
+    login_action:           signin
+
+    secure_module:          sfSimpleAuth
+    secure_action:          secure
