@@ -19,6 +19,7 @@ $browser->
     isStatusCode(200)->
     checkForm('sfSimpleAuthSigninForm')->
     checkElement('input[type=submit]')->
+    checkElement('p', 'Signin Partial')->
   end()->
 
   info('Submit empty form')->
