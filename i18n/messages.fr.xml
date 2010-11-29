@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2010-11-29T12:34:32Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>Username</source>
+        <target>Identifiant</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Password</source>
+        <target>Mot de passe</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Signin</source>
+        <target>Connexion</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Required.</source>
+        <target>Obligatoire</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>username and/or password is invalid</source>
+        <target>Les identifiants sont invalides</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

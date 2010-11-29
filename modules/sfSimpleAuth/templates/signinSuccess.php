@@ -6,6 +6,6 @@
     <table>
       <?php echo $form ?>
     </table>
-    <input type="submit" value="signin" />
+    <input type="submit" value="<?php echo __('Signin') ?>" />
   </form>
 <?php endif; ?>
