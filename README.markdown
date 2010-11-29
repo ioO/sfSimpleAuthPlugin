@@ -24,8 +24,7 @@ Check if plugin is correctly enabled in your project config/ProjectConfiguration
 
 sfSimpleAuth comes with his default config/settings.yml.
 
-edit /apps/appname/config/setting.yml :
-
+    /apps/appname/config/setting.yml :
     enabled_modules:        [sfSimpleAuth]
 
 ## How to configure
@@ -47,40 +46,40 @@ With php cli
 
 Edit app.yml and put the hash in password.
 
-prod:
-  sf_simple_auth:
-    username:                 username
-    password:                 28de1b112c04960b043d9fc2f02c160f95a299cd
-    encryption:               sha1
+    prod:
+      sf_simple_auth:
+        username:                 username
+        password:                 28de1b112c04960b043d9fc2f02c160f95a299cd
+        encryption:               sha1
 
 ## Change template.
 
 By default symfony use signinSuccess template. To override plugins in symfony create an module in your project.
 But if you only have to override the template you can use the template var in app.yml
 
-prod:
-  sf_simple_auth:
-    username:                 username
-    password:                 28de1b112c04960b043d9fc2f02c160f95a299cd
-    encryption:               sha1
-    template:                 [module,partial]
+    prod:
+      sf_simple_auth:
+        username:                 username
+        password:                 28de1b112c04960b043d9fc2f02c160f95a299cd
+        encryption:               sha1
+        template:                 [module,partial]
 
 Module is module name where you save your partial in template folder. For example you make a template apps/appname/template/_signin.php
 
-prod:
-  sf_simple_auth:
-    template:                 [global,signin]
+    prod:
+      sf_simple_auth:
+        template:                 [global,signin]
 
 The partial name is passed througth the default plugin template in sfSimpleAuth/template with the $form var.
 
 ## Enable plugin tests with your project
 
-edit /config/ProjectConfiguration.class.php and add this
+    /config/ProjectConfiguration.class.php and add this
 
-  public function setupPlugins()
-  {
-    $this->pluginConfigurations['sfSimpleAuthPlugin']->connectTests();
-  }
+    public function setupPlugins()
+    {
+      $this->pluginConfigurations['sfSimpleAuthPlugin']->connectTests();
+    }
 
 ## How to help ?
 
